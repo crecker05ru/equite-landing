@@ -1,16 +1,24 @@
 import Image from 'next/image'
-
-
 import SvgGroupe from './svgGroupe';
 import Button from '@mui/material/Button';
 import PaginationSvg from './paginationSvg';
 import RectSvg from './rectSvg';
+import MediaSvgGroup from './mediaSvgGroup'
+import BurgerMenuSvg from './burgerMenuSvg';
 export default function Main (){
     return (<>
                                 <div className='background_image'>
+                                
                 {/* <Image src="/img.png" alt="img" width={1485} height={695} /> */}
                 </div>
+                <div className='media-background_image'></div>
+                <div className='svg-group'> 
+               <SvgGroupe/>
+              
+                </div>
+                <div className='media-svg-group'> <MediaSvgGroup/></div>
                 <main className='main'>
+                  
                 {/* <div className="custom-shape-divider-top-1639311150">
                       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
@@ -19,9 +27,7 @@ export default function Main (){
                 {/* <div className='svg-1'><SVG1/> </div>
                 <div className='svg-2'><SVG3/></div>
                 <div className='svg-3'><SVG2/></div> */}
-               <div className='svg-group'> 
-               <SvgGroupe/>
-                </div>
+
                 <div className="header"> 
                   <div><Image src="/logo-1.png" alt="logo" width={48}  height={56}/></div>
                   <div className='header-text'>Главная</div>
@@ -33,6 +39,13 @@ export default function Main (){
                   <button className='header__button'>RU</button>
                   <button className='header__button'>Войти</button>
                   <button className='header__button'>Начать</button>
+                </div>
+                <div className="media-header"> 
+                  <div><Image src="/logo-1.png" alt="logo" width={48}  height={56}/></div>
+                  <div className='header-text'>Equite.Io</div>
+                  <div></div>
+                  <button className='header__button'>RU</button>
+                  <div className='header-burger-menu'><BurgerMenuSvg/></div>
                 </div>
                 <div className='description-containers'>
                   <div className='description-text'>Поделитесь своими результатами</div>
