@@ -1,9 +1,10 @@
 import Image from 'next/image'
-import SVG1 from './svg1';
-import SVG2 from './svg2';
-import SVG3 from './svg3';
+
+
 import SvgGroupe from './svgGroupe';
 import Button from '@mui/material/Button';
+import PaginationSvg from './paginationSvg';
+import RectSvg from './rectSvg';
 export default function Main (){
     return (<>
                                 <div className='background_image'>
@@ -41,6 +42,15 @@ export default function Main (){
                   <button className='button-start'>Начать</button>
                   <button className='button-traider'>Я трейдер</button>
                 </div>
+                <div className='pagination-svgs'>
+                <RectSvg/> <RectSvg/> <RectSvg/>
+                </div>
+                <div className='logos-group'>
+                  {/* <Image src="/logos-group.png"  alt="logos" width={1256} height={79}/> */}
+                 
+                </div>
+                
+                
                 {/* <div className="background_svg">qdfthrgtr</div> */}
                 </main>
     </>
